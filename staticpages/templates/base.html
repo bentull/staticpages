@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}ISDS 3107 Static Pages Assignment{% endblock %}</title>
+
+</head>
+
+<body>
+    <div>
+        <a href="{% url 'home' %}">HOME</a> | <a href="{% url 'about' %}">ABOUT</a>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
